@@ -1,0 +1,30 @@
+/* 
+	Notes:
+	Inline object with 1 space so can not using perfect size; 
+		frame 1000px;
+		left: 480px;
+		right: 495px;
+	Using inline-block 
+*/
+		.frame{
+			background-color:#eeeeee;
+			width:1000px;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		.left{
+			background-color:red;
+			width:480px;
+			padding:10px;
+			display:inline-block;
+			vertical-align:top;
+		}
+		.right{
+			background-color:blue;
+			width:495px;
+			display:inline-block;
+			vertical-align:center;
+		}
+		.head{
+			background-color:#eeeeee;
+		}

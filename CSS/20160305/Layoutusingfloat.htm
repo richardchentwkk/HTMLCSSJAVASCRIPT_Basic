@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Layout Practice</title>
+	<meta charset="utf-8" />
+	<!--CSS attribute-->
+	<style type="text/css">
+		/*Float 會遇到的問題
+			1)爆版
+				解法:需算清楚
+				Box = width + padding + border
+		*/
+		.frame{
+			background-color:#eeeeee;
+			width:1000px;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		.left{
+			/*background-color:red;*/
+			width:500px;
+			float:left;
+		}
+		.right{
+			/*background-color:blue;*/
+			width:500px;
+			float:left;
+		}
+		/*Float 修正需加入 Clear 做修正*/
+		.clear{
+			clear:both;
+		}
+	</style>
+</head>
+<!--Main body-->
+<body>
+<div class="frame">
+<div class="left">Left</div>
+<div class="right">Right</div>
+<!--加入Clear做修正-->
+<div class="clear"></div>
+</div>
+
+</body>
+
+</html>
