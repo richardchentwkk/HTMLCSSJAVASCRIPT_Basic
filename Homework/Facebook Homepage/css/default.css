@@ -1,0 +1,39 @@
+.title_bar_background{
+    background-color: #3b5998;
+}
+
+.frame_header{
+    background-color: #3b5998;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.frame_left{
+    background-color: #3b5998;
+    width: 580px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.frame_right{
+    background-color: #3b5998;
+    width: 382px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#Menutext{
+    color: white;
+}
+
+#loginbutton{
+    color: white;
+    background-color: #3b5998;
+    border-color: black;
+}
+
+#textwhitesmoke{
+    color: whitesmoke;
+}
