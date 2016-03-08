@@ -2,9 +2,27 @@
     background-color: #3b5998;
 }
 
+.middle_background{
+	background:linear-gradient(white,#D3D8E8);
+}
+
 .frame_header{
     background-color: #3b5998;
     width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.frame_middle{
+    background:linear-gradient(white,#D3D8E8);
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.frame_bottom{
+    width: 1000px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -16,12 +34,102 @@
     vertical-align: top;
 }
 
-.frame_right{
-    background-color: #3b5998;
-    width: 382px;
-    padding: 10px;
+.linktext{
+    font-size: 16px;
+    padding: 2px;
+}
+
+.cellpadding{
+    padding-right: 20px;
+}
+
+.frame_middle_left{
+    background:linear-gradient(white,#D3D8E8);
+    width: 565px;
     display: inline-block;
     vertical-align: top;
+}
+
+.frame_right{
+    background-color: #3b5998;
+    width: 390px;
+	padding-right:20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.frame_middle_right{
+    width: 390px;
+	padding-right:20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.frame_table{
+	margin:10px;
+}
+
+.uilastname{
+    display: inline-block;
+    position: relative;
+}
+
+.inputtext{
+    padding-bottom: 4px;
+    border: 1px solid #bdc7d8;
+    margin: 0;
+    padding: 3px;
+}
+
+.58mg{
+    border-color: #bdc7d8;
+    border-radius: 5px;
+    margin: 0px;
+    width:172px;
+    padding: 8px;
+}
+
+.inboxlastname{
+    color: #999;
+    cursor: text;
+    display: block;
+    height: 100%;
+    left:0;
+    padding: 4px 0 0 5px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#Welcometext{
+	color:#0e385f;
+	font-size:21px;
+	font-weight:bold;
+	line-height:29px;
+	width:450px;
+	word-spacing:-1px;
+	vertical-align:bottom;
+	padding-top:40px;
+}
+
+#Regtext{
+	color:#0e385f;
+	font-size:30px;
+	font-weight:bold;
+	line-height:29px;
+	width:450px;
+	word-spacing:-1px;
+	vertical-align:bottom;
+	padding-top:30px;
+}
+
+#alwaysfreetext{
+	color:#0e385f;
+	font-size:23px;
+	line-height:29px;
+	width:450px;
+	word-spacing:-1px;
+	padding-top:10px;
 }
 
 #Menutext{
@@ -36,4 +144,14 @@
 
 #textwhitesmoke{
     color: whitesmoke;
+}
+
+
+#submitbutton{
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    width: 200px;
+    border: 1px;
+    border-radius: 5px;
 }
