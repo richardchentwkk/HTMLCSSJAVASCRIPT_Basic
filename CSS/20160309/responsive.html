@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout</title>
+        <!--指定不要做縮放-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <style type="text/css">
+            .frame{
+                width: 1000px;
+                margin: 0px auto;
+                text-align: center;
+            }
+            .box{
+                background-color: pink;
+                width: 300px;
+                height: 200px;
+                margin: 5px;
+                display: inline-block;
+                vertical-align: top;
+            }
+            
+            /*Reponsive design*/
+            /* CSS 3 media Query*/
+            @media screen and (max-width:500px){
+                .frame{
+                    width:100%;
+                }
+            }
+        </style>
+        
+    </head>
+    
+    <body>
+        <div class="frame">
+            <div class="box">Left</div>
+            <div class="box">Center</div>
+            <div class="box">Right</div>
+        </div>
+    </body>
+
+</html>
