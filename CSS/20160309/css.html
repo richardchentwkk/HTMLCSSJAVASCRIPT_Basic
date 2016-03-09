@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+        .box_absolute{
+            width:100px;
+            height: 100px;
+            background-color: red;
+            /*  Absolute Position,排版不建議使用。
+                可指定座標 
+                (0,0)---------> x
+                 |
+                 |
+                 |
+                 |
+                 y
+            
+            */
+            position: absolute;
+            right: 0px;
+            top: 0px;
+        }
+        /*
+            Fixed position. Box will not change position when scrolled.
+        */
+        .box_fix{
+            width:100px;
+            height: 100px;
+            background-color: red;
+            position: fixed;
+            right: 0px;
+            top:0px;
+        }
+        
+        .box_relative{
+            width:100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            left: 50px;
+            top:0px;
+        }
+        
+        .upper{
+            position: relative;
+            top:-8px;
+        }
+        /**
+        *   RGB:
+        *   色碼, 數字越小，顏色越暗。
+        *   rgb(255,0,0)    ---> Red
+        *   rgb(254,0,0)
+        *   rgb(255,255,255) --> White
+        *   ex: background-color:rgb(254,0,0)
+        
+        *  
+        */
+    </style>
+</head>
+<body>
+    <div>Hello world1</div>
+    <div class="box_relative">Box</div>
+    <div style="height:2000px;">Hello world
+        <span class="upper">2</span></div>
+</body>
+</html>
