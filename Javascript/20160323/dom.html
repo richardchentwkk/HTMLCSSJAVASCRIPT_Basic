@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML DOM</title>
+</head>
+
+<body>
+    <h3>Hello world.</h3>
+    <div id="content">Today is a <span id="emotion">good</span> day.</div>
+    <button onclick="change()">Click me.</button>
+</body>
+<script type="text/javascript">
+//Use below code will change whole body.
+//document.body.innerHTML = "Hello world 2";
+function change() {
+    var divobj = document.getElementById("emotion");
+    divobj.innerHTML = "bad";
+    divobj.style.backgroundColor="red";
+    //alert("Clicked.");
+}
+
+</script>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Search Engine.</title>
+    <script type="text/javascript">
+    //Refactor
+    function get(id) {
+        return document.getElementById(id);
+    }
+
+    function change(choose) {
+        var page = get("page");
+        var img = get("image");
+        var btn = get("btn");
+        if (choose === 0) { //Page.
+            page.className = "current";
+            img.className = "tab";
+            btn.value = "Page Search"; //Value是HTML屬性
+        } else { //Pic
+            page.className = "tab";
+            img.className = "current";
+            btn.value = "Image Search"; //Value是HTML屬性
+        }
+    }
+
+    /*function changeToImg() {
+        var page = get("page");
+        var img = get("image");
+        var btn = get("btn");
+        page.style.fontWeight="normal";
+        img.style.fontWeight="bold";
+        btn.value="Image Search"; //Value是HTML屬性
+    }*/
+    </script>
+    <style type="text/css">
+    .tab {
+        color: black;
+        font-weight=normal;
+    }
+    
+    .current {
+        color: red;
+        font-weight=blod;
+    }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span id="page" onclick="change(0)">Page</span>
+        <span id="image" onclick="change(1)">Image</span>
+    </div>
+    <div>
+        <input type="text">
+        <input type="button" value="Page Search" id="btn">
+    </div>
+</body>
+
+</html>

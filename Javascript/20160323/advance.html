@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML DOM</title>
+    <script type="text/javascript">
+    function add() {
+        var link = document.createElement("a");
+        link.innerHTML = "Google<br>";
+        link.href = "http://www.google.com.tw";
+        document.body.appendChild(link);
+    }
+
+    function del() {
+        var menu = document.getElementById("menu");
+        var add = document.getElementById("addbtn");
+        menu.removeChild(add);
+    }
+    </script>
+</head>
+
+<body>
+    <div id="menu">
+        <button id="addbtn" onclick="add();">add</button>
+        <button onclick="del();">Delete</button>
+    </div>
+</body>
+
+</html>
