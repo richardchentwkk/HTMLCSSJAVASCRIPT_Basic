@@ -13,9 +13,28 @@
     <div class="header_background">
         <div class="header_frame">
             <div class="header_title ">Richard Chen's Home page.</div>
-            <div class="tab_style tab active_tab" id="tab1">Introduction</div>
-            <div class="tab_style tab inactive_tab" id="tab2">Resume</div>
-            <div class="tab_style tab inactive_tab" id="tab3">Contact</div>
+            <div class="tab_style active_tab" onclick="changeContent(0)" id="tab1">Resume</div>
+            <div class="tab_style inactive_tab" onclick="changeContent(1)" id="tab2">Collections</div>
+            <div class="tab_style inactive_tab" onclick="changeContent(2)" id="tab3">Contact</div>
+        </div>
+    </div>
+    <!--Content-->
+    <div class="content_background">
+        <div class="content_frame">
+            <div id="content1">
+                <div class="content_title">Resume</div>
+                <div class="content_article">Resume part will finished later.</div>
+            </div>
+            <div id="content2">
+                <div class="content_title">
+                    Collections
+                </div>
+                <div class="content_article">Collection part will finished later.</div>
+            </div>
+            <div id="content3">
+                <div class="content_title">Contact</div>
+                <div class="content_article">Contact part will finished later.</div>
+            </div>
         </div>
     </div>
 </body>

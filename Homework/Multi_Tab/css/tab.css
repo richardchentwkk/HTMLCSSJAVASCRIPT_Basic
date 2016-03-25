@@ -2,11 +2,35 @@
     background-color: #3A5795;
 }
 
+
+/*Reference gradient background*/
+
+.content_background {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#feffff+0,ddf1f9+35,a0d8ef+100;Blue+3D+%2318 */
+    background: rgb(254, 255, 255);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(254, 255, 255, 1) 0%, rgba(221, 241, 249, 1) 35%, rgba(160, 216, 239, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(254, 255, 255, 1) 0%, rgba(221, 241, 249, 1) 35%, rgba(160, 216, 239, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(254, 255, 255, 1) 0%, rgba(221, 241, 249, 1) 35%, rgba(160, 216, 239, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#a0d8ef', GradientType=0);
+    /* IE6-9 */
+}
+
 .header_frame {
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
     background-color: #3A5795;
+}
+
+.content_frame {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
 }
 
 .header_title {
@@ -22,25 +46,41 @@
     width: calc(99%/3);
     height: 50px;
     text-align: center;
-    margin-bottom: -5px;
+    margin-bottom: -2px;
     line-height: 50px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 0px #3A5795 solid;
     display: inline-block;
     font-size: 25px;
 }
 
+div.tab_style:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
 .inactive_tab {
-    background-color: pink;
-    font-weight: normal;
+    background-color: gray;
 }
 
 .active_tab {
-    background-color: green;
-    font-weight: bold;
+    background-color: white;
 }
 
-div.tab:hover {
-    background-color: yellow;
-    color: blue;
+div#content2 {
+    display: none;
+}
+
+div#content3 {
+    display: none;
+}
+
+.content_title {
+    font-size: 30px;
+    padding: 15px;
+}
+
+.content_article {
+    font-size: 24px;
+    padding-left: 15px;
 }
