@@ -6,10 +6,8 @@ function changeContent(tabNum) {
 
     for (i = 0; i < contents.length; i++) {
         if (i === tabNum) {
-            tabs[i].style.backgroundColor = "white";
             contents[i].style.display = "block";
         } else {
-            tabs[i].style.backgroundColor = "gray";
             contents[i].style.display = "none";
         }
     }

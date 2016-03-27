@@ -8,81 +8,187 @@
     <link rel="stylesheet" href="css/tab.css">
 </head>
 
-<body>
+<body class="font_family">
     <!--Header-->
     <div class="header_background">
         <div class="header_frame">
             <div class="header_title ">Richard Chen</div>
-            <div class="tab_style active_tab" onclick="changeContent(0)" id="tab1">Resume</div>
-            <div class="tab_style inactive_tab" onclick="changeContent(1)" id="tab2">Collections</div>
-            <div class="tab_style inactive_tab" onclick="changeContent(2)" id="tab3">Contact</div>
+        </div>
+    </div>
+    <div class="menu_background">
+        <div class="menu_frame">
+            <div class="tab_style inactive_tab" onmouseover="changeContent(0)" id="tab1">RESUME</div>
+            <div class="tab_style inactive_tab" onmouseover="changeContent(1)" id="tab2">COLLECTIONS</div>
+            <div class="tab_style inactive_tab" onmouseover="changeContent(2)" id="tab3">CONTACT</div>
         </div>
     </div>
     <!--Content-->
     <div class="content_background">
         <div class="content_frame">
             <div id="content1">
-                <div class="content_title content_title_background">Resume</div>
                 <!--Content left-->
-                <div class="content_article content_left">
-                    <img class="profile" src="img/Richard.png" alt="Richard_Pic" width="172" height="200">
+                <div class="content_left">
+                    <div class="profile_frame">
+                        <img class="profile" src="img/Richard.png" alt="Richard_Pic" width="172" height="200">
+                    </div>
                     <!--Block for contact info.-->
                     <div class="content_left_contact">
                         <!--Phone-->
                         <div class="contact_cell">
-                            <img class="contact_pic_andtext contact_cell_pic" src="img/Richard.png" alt="temp" width="50" height="50">
-                            <div class="contact_pic_andtext contact_text">+886 988-737-213
+                            <img class="contact_pic" src="img/phone.png" alt="fake" width="35" height="35">
+                            <div class="contact_text">+886 988-737-213
                             </div>
-                            <br>
                         </div>
                         <!--Facebook-->
                         <div class="contact_cell">
-                            <img class="contact_pic_andtext contact_cell_pic" src="img/Richard.png" alt="temp" width="50" height="50">
-                            <div class="contact_pic_andtext contact_text">
+                            <img class="contact_pic" src="img/facebook.png" alt="temp" width="35" height="35">
+                            <div class="contact_text">
                                 <a href="https://www.facebook.com/RichardChenTw" target="_blank">Richard Chen FB</a>
                             </div>
-                            <br>
                         </div>
                         <!--Email-->
                         <div class="contact_cell">
-                            <img class="contact_pic_andtext contact_cell_pic" src="img/Richard.png" alt="temp" width="50" height="50">
-                            <div class="contact_pic_andtext contact_text">richardchentwkk@gmail.com
+                            <img class="contact_pic" src="img/email.png" alt="temp" width="35" height="35">
+                            <div class="contact_text">richardchentwkk@gmail.com
                             </div>
-                            <br>
                         </div>
                         <!--Address-->
                         <div class="contact_cell">
-                            <img class="contact_pic_andtext contact_cell_pic" src="img/Richard.png" alt="temp" width="50" height="50">
-                            <div class="contact_pic_andtext contact_text
- address_size">6F.-1, No.43, Songjiang Rd., Zhongshan Dist., Taipei City 104, Taiwan (R.O.C.)
+                            <img class="contact_pic" src="img/home.png" alt="temp" width="35" height="35">
+                            <div style="width: 300px;" class="contact_text">6F.-1, No.43, Songjiang Rd., Zhongshan Dist., Taipei City 104, Taiwan (R.O.C.)
+                            </div>
+                        </div>
+                        <!--SKILL TITLE-->
+                        <div class="font_skill_title skill_cell">SKILLS</div>
+                        <hr class="cell_line" size="3">
+                        <!--Professional-->
+                        <div class="font_profess_skill">PROFESSIONAL SKILLS</div>
+                        <!--Android-->
+                        <div class="skill_margin">
+                            <div class="font_skills">Android</div>
+                            <div class="meter">
+                                <span class="color_green" style="width: 85%"></span>
+                            </div>
+                        </div>
+                        <!--Java-->
+                        <div class="skill_margin">
+                            <div class="font_skills">Java</div>
+                            <div class="meter">
+                                <span class="color_green" style="width: 80%"></span>
+                            </div>
+                        </div>
+                        <!--C/C++-->
+                        <div class="skill_margin">
+                            <div class="font_skills">C/C++</div>
+                            <div class="meter">
+                                <span class="color_yellow" style="width: 65%"></span>
+                            </div>
+                        </div>
+                        <!--Python-->
+                        <div class="skill_margin">
+                            <div class="font_skills">Python</div>
+                            <div class="meter">
+                                <span class="color_yellow" style="width: 50%"></span>
+                            </div>
+                        </div>
+                        <!--SQL-->
+                        <div class="skill_margin">
+                            <div class="font_skills">SQL</div>
+                            <div class="meter">
+                                <span class="color_red" style="width: 35%"></span>
+                            </div>
+                        </div>
+                        <!--Javascript-->
+                        <div class="skill_margin">
+                            <div class="font_skills">Javascript</div>
+                            <div class="meter">
+                                <span class="color_red" style="width: 30%"></span>
+                            </div>
+                        </div>
+                        <!--HTML CSS-->
+                        <div class="skill_margin">
+                            <div class="font_skills">HTML/CSS</div>
+                            <div class="meter">
+                                <span class="color_red" style="width: 30%"></span>
+                            </div>
+                        </div>
+                        <!--Language-->
+                        <div class="font_profess_skill">LANGUAGE SKILL</div>
+                        <!--Madrain chinese-->
+                        <div class="skill_margin">
+                            <div class="font_skills">Madrain Chinese</div>
+                            <div class="meter">
+                                <span class="color_green" style="width: 85%"></span>
+                            </div>
+                        </div>
+                        <!--English-->
+                        <div class="skill_margin">
+                            <div class="font_skills">English</div>
+                            <div class="meter">
+                                <span class="color_green" style="width: 70%"></span>
+                            </div>
+                        </div>
+                        <!--Germany-->
+                        <div class="skill_margin">
+                            <div class="font_skills">Germany</div>
+                            <div class="meter">
+                                <span class="color_red" style="width: 40%"></span>
+                            </div>
+                        </div>
+                        <!--Germany-->
+                        <div class="skill_margin">
+                            <div class="font_skills">Haka</div>
+                            <div class="meter">
+                                <span class="color_red" style="width: 40%">
+                            </span>
                             </div>
                         </div>
                     </div>
-                    <!--SKILL TITLE-->
-                    <div class="font_skill_title skill_cell">SKILLS</div>
-                    <hr class="cell_line" size="3">
-                    <!--Professional-->
-                    <div class="font_profess_skill">PROFESSIONAL SKILLS</div>
-                    <div>Java</div>
-                    <div class="meter">
-                        <span style="width: 80%"></span>
-                    </div>
                 </div>
                 <!--Content right-->
-                <div class="content_article content_right">test part</div>
+                <div class="content_right">
+                    <div class="font_right_title">
+                        INTRODUCTION
+                    </div>
+                    <div class="right_content_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eaque earum molestias saepe soluta consequatur inventore sint dicta corporis! Pariatur id velit, veritatis beatae suscipit nihil ad voluptatibus officiis laborum?</div>
+                    <!--Right Cell block-->
+                    <div class="block_content_right">
+                        <img class="contact_pic_andtext resume_cell_pic" src="img/graduation.png" alt="temp" width="40" height="40">
+                        <div class="font_right_title">EDUCATION</div>
+                        <div class="right_content_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quam voluptatibus suscipit officia est molestiae modi ipsam harum similique, omnis voluptas, odit fugit, recusandae asperiores dolor numquam dolore. Quidem, sed!</div>
+                        <hr class="cell_line_right">
+                        <div class="right_content_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis molestiae, voluptate dolorum delectus quisquam atque nisi minima optio consectetur pariatur aliquid quaerat ex quidem officia tenetur ipsum minus, provident rem.</div>
+                    </div>
+                    <!--JOB Exprience.-->
+                    <div class="block_content_right">
+                        <img class="contact_pic_andtext resume_cell_pic" src="img/job.png" alt="temp" width="40" height="40">
+                        <div class="font_right_title">WORK EXPERIENCE</div>
+                        <hr class="cell_line_right">
+                        <div class="right_content_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quam voluptatibus suscipit officia est molestiae modi ipsam harum similique, omnis voluptas, odit fugit, recusandae asperiores dolor numquam dolore. Quidem, sed!</div>
+                        <hr class="cell_line_right">
+                        <div class="right_content_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis molestiae, voluptate dolorum delectus quisquam atque nisi minima optio consectetur pariatur aliquid quaerat ex quidem officia tenetur ipsum minus, provident rem.</div>
+                    </div>
+                    <!--Collections.-->
+                    <div class="block_content_right">
+                        <img class="contact_pic_andtext resume_cell_pic" src="img/collections.png" alt="temp" width="40" height="40">
+                        <div class="font_right_title">COLLECTIONS</div>
+                        <hr class="cell_line_right">
+                        <div class="right_content_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quam voluptatibus suscipit officia est molestiae modi ipsam harum similique, omnis voluptas, odit fugit, recusandae asperiores dolor numquam dolore. Quidem, sed!</div>
+                        <hr class="cell_line_right">
+                        <div class="right_content_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis molestiae, voluptate dolorum delectus quisquam atque nisi minima optio consectetur pariatur aliquid quaerat ex quidem officia tenetur ipsum minus, provident rem.
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="content2">
-                <div class="content_title content_title_background">
-                    Collections
-                </div>
-                <div class="content_article">Collection part will finished later.</div>
+                <div>Collection part will finished later.</div>
+                <div>Collection part will finished later.</div>
             </div>
             <div id="content3">
-                <div class="content_title content_title_background">Contact</div>
-                <div class="content_article">Contact part will finished later.</div>
+                <div>Contact part will finished later.</div>
+                <div>Contact part will finished later.</div>
             </div>
         </div>
-    </div>
     </div>
 </body>
 
