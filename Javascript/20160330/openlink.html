@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Open link</title>
+    <script type="text/javascript">
+    function init() {
+        var links = document.links;
+        for (var i = 0; i < links.length; i++) {
+            links[i].target = "_blank";
+        }
+    }
+    /*
+		gender: 1.selectedIndex
+				2.options is an array.
+    */
+    function check() {
+        var gender = document.getElementById("gender");
+        if (gender.selectedIndex == 0) {
+            alert("請選擇性別");
+        } else {
+            var option = gender.options[gender.selectedIndex];
+            alert(option.innerHTML);
+        }
+    }
+    </script>
+</head>
+
+<body onload="init()">
+    <ul>
+        <li><a target="_blank" href="http://www.google.com">Google</a></li>
+        <li><a href="http://www.facebook.com">FB</a></li>
+    </ul>
+    <!--下拉式選單
+	gender: selected index
+			
+    -->
+    <select id="gender">
+        <option>選擇性別</option>
+        <option>男</option>
+        <option>女</option>
+    </select>
+    <button onclick="check();">Check</button>
+</body>
+
+</html>

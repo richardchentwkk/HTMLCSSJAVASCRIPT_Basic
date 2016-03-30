@@ -1,0 +1,9 @@
+.box {
+    width: 200px;
+    height: 120px;
+    border: 1px solid black;
+    /*超出就show出來的 parameter*/
+    /*overflow: auto;*/
+    /*隱藏捲軸*/
+    overflow: hidden;
+}
