@@ -1,8 +1,8 @@
 function changeContent(tabNum) {
     var contents =
-        new Array(getId("content1"), getId("content2"), getId("content3"));
+        new Array(getId("content1"), getId("content2"));
     var tabs =
-        new Array(getId("tab1"), getId("tab2"), getId("tab3"));
+        new Array(getId("tab1"), getId("tab2"));
 
     for (i = 0; i < contents.length; i++) {
         if (i === tabNum) {
