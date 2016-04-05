@@ -130,6 +130,7 @@ table {
 .cell_line_right {
     display: inline-block;
     width: 200px;
+    text-align: middle;
 }
 
 .cell_background {
@@ -172,6 +173,10 @@ div.tab_style:hover {
 a {
     text-decoration: none;
     color: #B9B9B9;
+}
+
+a.projects {
+    color: black;
 }
 
 a:hover {
@@ -235,6 +240,18 @@ div#content3 {
     text-align: left;
 }
 
+.font_school_experience {
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: white;
+    text-align: left;
+    display: inline-block;
+}
+
+.font_year {
+    display: inline-block;
+}
+
 .skill_margin {
     margin: 0px 0px 8px 0px;
 }
@@ -275,4 +292,44 @@ div#content3 {
     position: relative;
     overflow: hidden;
     background-color: #03D0E6;
+}
+
+
+/*Content2*/
+
+.thumbs {
+    list-style: none;
+    margin: 0px;
+}
+
+.li_projects {
+    display: inline-block;
+    width: 270px;
+    height: 240px;
+    border-radius: 5px;
+    margin: 20px;
+    background-color: white;
+    opacity: 1;
+}
+
+.li_project_font {
+    font-size: 20px;
+    text-align: center;
+}
+
+.li_project_pic {
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px 10px 0px 10px;
+}
+
+.class_svg_project_pic {
+    width: 250px;
+    height: 200px;
+    margin: 10px 10px 0px 10px;
+}
+
+.svg_text_font {
+    font-size: 22px;
+    letter-spacing: 1.5px;
 }

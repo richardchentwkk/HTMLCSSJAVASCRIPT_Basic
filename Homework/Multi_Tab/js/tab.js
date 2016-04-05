@@ -16,3 +16,23 @@ function changeContent(tabNum) {
 function getId(id) {
     return document.getElementById(id);
 }
+
+function hidebackground(element) {
+    var parent = document.getElementById("thumbs");
+    var thumbs = parent.children;
+    for (i = 0; i < thumbs.length; i++) {
+        if (thumbs[i] != element) {
+            thumbs[i].style.opacity = "0.5";
+        } else {
+            thumbs[i].style.opacity = "1";
+        }
+    }
+}
+
+function showbackground(element) {
+    var parent = document.getElementById("thumbs");
+    var thumbs = parent.children;
+    for (i = 0; i < thumbs.length; i++) {
+        thumbs[i].style.opacity = "1";
+    }
+}
