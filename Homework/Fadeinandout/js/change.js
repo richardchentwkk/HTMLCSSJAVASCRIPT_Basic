@@ -1,6 +1,7 @@
-var opacityId;
+var fadeoutId;
 var fadeElement;
 var opacity;
+var fadeinId;
 
 //Fade in.
 function fadein(element) {
@@ -9,12 +10,14 @@ function fadein(element) {
     opacity = 0.5;
     fadeElement.style.opacity = "0.5";
     fadeElement.innerHTML = "Fade in.";
-    opacityId = window.setInterval(upOpacity, 100);
+    fadeinId = window.setInterval(upOpacity, 50);
 }
 
 function upOpacity() {
+    //Clean fade-out interval.
+    window.clearInterval(fadeoutId);
     if (opacity >= 0.901) {
-        window.clearInterval(opacityId);
+        window.clearInterval(fadeinId);
         fadeElement.innerHTML = "Fade in done.";
     } else {
         opacity += 0.1;
@@ -29,14 +32,15 @@ function fadeout(element) {
     opacity = 1;
     fadeElement.style.opacity = "1";
     fadeElement.innerHTML = "Fade out.";
-    opacityId = window.setInterval(downOpacity, 100);
+    fadeoutId = window.setInterval(downOpacity, 50);
 }
 
 function downOpacity() {
+    //Clean fade-in interval.
+    window.clearInterval(fadeinId);
     if (opacity <= 0.501) {
-        alert(fadeElement.style.opacity);
         fadeElement.innerHTML = "Fade out done.";
-        window.clearInterval(opacityId);
+        window.clearInterval(fadeoutId);
     } else {
         opacity -= 0.1;
         fadeElement.style.opacity = opacity;

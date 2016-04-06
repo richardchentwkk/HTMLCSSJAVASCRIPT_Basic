@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JSON</title>
+    <script type="text/javascript">
+    /* JSON: Javascript Object Notation.
+                        var point = new Object();
+                        point.x = 3;
+                    	point.y = 4;
+                    	point.getPosition = function(){
+                    		alert(this.x+","+this.y);
+                    	}
+                    	*/
+    var point = {
+        "x": 3,
+        "y": 4,
+        "getPosition": function() {
+            alert(this.x + "," + this.y)
+        }
+    };
+
+    point.getPosition();
+
+    /*
+		Input:物件
+		成員 n1:數字
+		成員 n2:數字
+    */
+    function add(input) {
+        alert(input.n1 + input.n2);
+    }
+    add({
+        n1: 2,
+        n2: 4
+    });
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
