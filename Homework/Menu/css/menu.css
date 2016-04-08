@@ -1,0 +1,47 @@
+li,
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.menu {
+    width: 95px;
+    display: inline-block;
+    position: relative;
+    background-color: red;
+}
+
+.child1 {
+    width: 95px;
+    background-color: blue;
+    position: absolute;
+    display: none;
+}
+
+.child2 {
+    width: 95px;
+    background-color: yellow;
+    position: absolute;
+    top: 37px;
+    display: none;
+}
+
+.child3 {
+    width: 95px;
+    background-color: green;
+    position: absolute;
+    top: 55px;
+    display: none;
+}
+
+ul.menu:hover > li.child1 {
+    display: block;
+}
+
+ul.menu:hover > li.child2 {
+    display: block;
+}
+
+ul.menu:hover > li.child3 {
+    display: block;
+}
