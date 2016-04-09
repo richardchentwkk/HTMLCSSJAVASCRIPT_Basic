@@ -1,0 +1,11 @@
+.container{
+	border: 1px solid #000;
+}
+
+.box{
+	width: 100px;
+	height: 100px;
+	margin:2px;
+	background-color: #ddd;
+	float: right;
+}
