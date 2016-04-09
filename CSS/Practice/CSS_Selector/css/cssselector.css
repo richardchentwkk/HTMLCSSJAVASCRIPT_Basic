@@ -1,0 +1,78 @@
+.body_color {
+    background-color: white;
+}
+
+
+/*Multi-elements*/
+
+p,
+a {
+    background-color: red;
+}
+
+
+/*DIV 中的 a*/
+
+div a {
+    background-color: yellow;
+}
+
+
+/* p上一層是 div會被選擇*/
+
+div>p {
+    background-color: pink;
+}
+
+
+/*只改變第一個出現的p*/
+
+div+p {
+    background-color: lightgreen;
+}
+
+
+/*Select all p elements after div*/
+
+div~p {
+    background-color: blue;
+}
+
+
+/*屬性選擇器 開頭*/
+
+[class^="col-"] {
+    background-color: #777;
+    margin: 5px;
+}
+
+.col-1 {
+    width: 100%;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+
+/*練習選擇結尾*/
+
+[href$=pdf] {
+    background-color: gray;
+}
+
+[href$=html] {
+    background-color: yellow;
+}
+
+[href$=docx] {
+    background-color: red;
+}
+
+p:first-child {
+    background-color: green;
+}
+
+p:nth-child(even) {
+    background-color: yellow;
+}

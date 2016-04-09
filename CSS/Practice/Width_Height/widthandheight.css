@@ -1,0 +1,12 @@
+div {
+    width: 500px;
+    height: 20em;
+    border: 10px solid red;
+}
+
+div.maxwidth {
+    max-width: 200px;
+    padding: 10px;
+    height: auto;
+    border: 5px solid green;
+}

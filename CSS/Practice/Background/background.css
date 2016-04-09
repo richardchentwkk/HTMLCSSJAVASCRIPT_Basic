@@ -1,0 +1,29 @@
+div.background {
+    background-color: red;
+}
+
+h1 {
+    background-color: green;
+}
+
+body {
+    background-image: url("testbackimg.png");
+    background-repeat: repeat-x;
+}
+
+body.norepeat {
+    background-image: url("testbackimg.png");
+    background-repeat: no-repeat;
+}
+
+body.background_position {
+    background-position: right top;
+}
+
+body.background_fixed {
+    background-attachment: fixed;
+}
+
+body.backgroud_short_code {
+    background: #ffffff url("testbackimg.png") no-repeat right top
+}

@@ -1,0 +1,31 @@
+p.solid {
+    border-style: solid;
+    border-width: 5px;
+}
+
+p.around_solid {
+    border-style: solid;
+    border-width: 2px 10px 5px 30px;
+}
+
+p.border_color_red {
+    border-style: solid;
+    border-color: red;
+}
+
+p.around_color {
+    border-style: solid;
+    border-color: red green black blue;
+}
+
+p.diff_style {
+    border-style: dotted solid;
+}
+
+p.four_style {
+    border-style: dotted solid double dashed;
+}
+
+p.shorthand_prop {
+    border: 10px solid red;
+}

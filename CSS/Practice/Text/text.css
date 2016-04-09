@@ -1,0 +1,49 @@
+body {
+    color: green;
+    border: 2px solid green;
+}
+
+h1 {
+    color: red;
+    border: 1px solid red;
+}
+
+h1.textaligncenter {
+    text-align: center;
+}
+
+h1.alignleft {
+    text-align: left;
+}
+
+h1.alignright {
+    text-align: right;
+}
+
+h1.justify {
+    text-align: justify;
+}
+
+a.canceldecorate {
+    text-decoration: none;
+}
+
+h1.textindent {
+    text-indent: 2em;
+}
+
+h1.letterspacing {
+    letter-spacing: 10px;
+}
+
+h1.big {
+    line-height: 1.5;
+}
+
+h1.small {
+    line-height: 0.5;
+}
+
+h1.wordspacing {
+    word-spacing: 10px;
+}
