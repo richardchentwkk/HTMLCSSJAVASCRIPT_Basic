@@ -1,11 +1,22 @@
-.container{
-	border: 1px solid #000;
+.container {
+    border: 1px solid #000;
+    overflow: auto;
 }
 
-.box{
-	width: 100px;
-	height: 100px;
-	margin:2px;
-	background-color: #ddd;
-	float: right;
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 2px;
+    background-color: #ddd;
+    float: left;
+}
+
+footer {
+    background-color: #add;
+    clear: left;
+}
+
+p:after {
+    content: "TEST";
+    background-color: #ada;
 }

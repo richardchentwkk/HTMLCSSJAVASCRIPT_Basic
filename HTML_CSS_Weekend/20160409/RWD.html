@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>RWD</title>
+    <!--取消預覽器自動縮放scale.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Gridsystem css-->
+    <link rel="stylesheet" href="css/gridsystem.css">
+</head>
+
+<body>
+    <!-- Quick note for RWD:
+        1) Browser 會自動幫你縮小成可以顯示全部內容的大小:
+            需要強制將scale轉成1。
+            keyword: scale
+        2) Grid System:切割成12等份
+            定義 col-及 row
+        3) Media-Query
+            根據不同解析度選擇不同的CSS
+    -->
+    <div class="row">
+        <div class="col-md-12 box"></div>
+        <div class="col-sm-12 col-md-2 box">2</div>
+        <div class="col-md-8 box">
+            <div class="row">
+                <div class="col-md-6 box"></div>
+                <div class="col-md-6 box"></div>
+            </div>
+        </div>
+        <div class="col-md-2 box"></div>
+        <div class="col-md-4 box"></div>
+        <div class="col-md-4 box"></div>
+        <div class="col-md-4 box"></div>
+        <div class="col-md-4 box"></div>
+        <div class="col-md-4 box"></div>
+        <div class="col-md-4 box"></div>
+        <div class="col-md-4 box"></div>
+        <div class="col-md-4 box"></div>
+        <div class="col-md-4 box"></div>
+    </div>
+</body>
+
+</html>
