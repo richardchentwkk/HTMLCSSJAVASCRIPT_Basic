@@ -1,0 +1,56 @@
+.box1 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    opacity: 0;
+    margin: 20px;
+    float: left;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.box2 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    opacity: 0;
+    margin: 20px;
+    float: left;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.box3 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 20px;
+    opacity: 0;
+    float: left;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 4s;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
